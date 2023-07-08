@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin:3%;
+        justify-content: space-between;
+        grid-gap:15px;
+
+    }
+    #container img {
+        width:100%;
+    }
+
+</style>
+<body>
+    <h1>YouTube</h1>
+
+    <input type="text" id="search_term" />
+    <button onClick="searchVedios()">Search</button>
+
+    <div id="container"></div>
+</body>
+</html>
+<script src="index.js"></script>
